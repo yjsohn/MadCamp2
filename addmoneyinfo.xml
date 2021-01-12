@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_margin = "20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Settle Money"
+            android:textColor="@color/com_facebook_blue"
+            android:textSize="15pt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+        <EditText
+                android:id = "@+id/writer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:hint="name"
+                android:textSize="6pt"
+                tools:ignore="Suspicious0dp"/>
+
+
+
+            <Button
+                android:id="@+id/participant_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Participants" />
+
+
+
+            <EditText
+                android:id = "@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="date"
+                android:textSize="6pt"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginTop="10dp"
+                />
+
+        <EditText
+            android:id = "@+id/money_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="textEmailAddress"
+            android:hint="total money used"
+            android:textSize="6pt"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id = "@+id/account_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="textEmailAddress"
+            android:hint="bank account"
+            android:textSize="6pt"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="10dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <Button
+                android:id = "@+id/save"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Save"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <Button
+                android:id="@+id/cancel"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Cancel"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
